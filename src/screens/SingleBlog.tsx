@@ -75,24 +75,24 @@ export default class SingleBlog extends React.Component<props, state> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },
   fontMd: {
-    color: "white",
+    color: "black",
     fontSize: 28,
   },
   fontLg: {
-    color: "white",
+    color: "black",
     fontSize: 45,
   },
   fontSm: {
-    color: "white",
+    color: "black",
     fontSize: 18,
   },
   fontTags:{
-    color: "white",
+    color: "black",
     fontSize: 18,
     flexDirection:'row',
      flexWrap:'wrap'

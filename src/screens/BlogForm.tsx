@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, StyleSheet, Alert, Picker } from "react-native"
+import { View, StyleSheet, Alert, Picker, Keyboard } from "react-native"
 import { Input, Button, Text } from "react-native-elements"
 import { NavigationInjectedProps, withNavigation } from "react-navigation"
 import { getUser, json as fwt } from "../utils/api";
@@ -106,9 +106,10 @@ class BlogForm extends React.Component<props, state>{
                 </View>
                 <Input
                     label="Body"
+                    onSubmitEditing={Keyboard.dismiss}
                     containerStyle={styles.containerStyle}
                     inputContainerStyle={{ borderBottomWidth: 0 }}
-                    multiline
+                    multiline={true}
                     numberOfLines={5}
                     leftIcon={{ type: "font-awesome", name: "file-text", color: "lightblue" }}
                     placeholder="Blog content..."

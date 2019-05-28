@@ -32,7 +32,7 @@ const AppStack = createStackNavigator(
             headerStyle:{
                 backgroundColor: "#fff"
             },
-            headerTintColor:"#000",
+            headerTintColor:"black",
             headerTitleStyle:{
                 fontWeight:"bold"
             }
@@ -52,7 +52,7 @@ const BlogsTab = createBottomTabNavigator(
                         headerStyle:{
                             backgroundColor: "#fff"
                         },
-                        headerTintColor:"#000",
+                        headerTintColor:"black",
                         headerTitleStyle:{
                             fontWeight:"bold"
                         }
